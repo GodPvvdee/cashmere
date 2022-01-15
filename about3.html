@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Altai Cashmare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <!-- Bootstrap -->
+    <link rel="icon" type="img/png" href="images/fav-icon.png" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <style>
+      #bywild{
+        position: fixed;
+        bottom: 0;
+        right: 0; z-index: 999;
+        color: white;
+        background-color: rgba(0,0,0,0.5);
+        padding: 4px; padding-left: 10px;
+        border-top-left-radius: 15px;
+        cursor: pointer;
+      }
+      #bywild .bywildby{}
+      #bywild .bywildwild{
+        display: inline-block;
+        width: 0; overflow:
+        hidden; vertical-align: middle;
+        transition: width 0.5s;
+      }
+      #bywild .bywildwild img{
+        width: 50px;
+      }
+      #bywild:hover .bywildwild{
+        width: 50px;
+      }
+      @media (max-width: 992px)  {
+        #bywild .bywildwild {
+          width: 50px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bywild" class="">
+      <div class="bywildby"> by
+        <div class="bywildwild">
+          <a href="http://wild.agency" target="_blank"> <img src="http://ardholdings.com/wp-content/themes/ARD/images/wild_white.svg"> </a>
+        </div>
+      </div>
+    </div>
+    <div id="header">
+      <div class="header-top">
+        <div class="narrow hidden-xs">
+          <span>
+            <img src="img/narrow.jpg" alt="">
+          </span>
+        </div>
+        <div class="container-fluid">
+          <div class="logo">
+            <a href="index.html">
+              <img src="img/logo.jpg" alt="">
+            </a>
+          </div>
+          <div class="pull-left">
+            <div class="lang">
+              <a href="#" class="active">MН</a>
+              <a href="#">En</a>
+            </div>
+          </div>
+          <div class="pull-right hidden-xs">
+            <div class="search">
+              <i class="fa fa-search left-icon"></i>
+              <button type="submit" class="btn btn-default"><i class="fa fa-angle-right"></i></button>
+              <input type="text" class="form-control" placeholder="хайх">
+            </div>
+          </div>
+          <div class="pull-right bars">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <ul class="nav-menu hidden-xs">
+        <li class="active"><a href="about.html">Бидний тухай <span></span> <i></i></a>
+          <div class="bg"></div>
+          <ul>
+            <li>
+              <a href="about1.html">Эрхэм зорилгo</a>
+            </li>
+            <li>
+              <a href="about2.html">Түүх</a>
+            </li>
+            <li>
+              <a href="about3.html">Хамт олон</a>
+            </li>
+            <li>
+              <a href="about4.html">Үйлдвэрлэл</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="product.html">Бүтээгдэхүүн<span></span> <i></i></a>
+          <div class="bg"></div>
+          <ul>
+            <li>
+              <a href="product1.html">Эрэгтэй</a>
+            </li>
+            <li>
+              <a href="product1.html">Эмэгтэй</a>
+            </li>
+            <li>
+              <a href="product1.html">Хүүхэд</a>
+            </li>
+            <li>
+              <a href="product1.html">Гэр Ахуй</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="news.html">Мэдээ<span></span> <i></i></a>
+          <div class="bg"></div>
+          <ul>
+            <li>
+              <a href="news1.html">Нийгмийн хариуцлагa</a>
+            </li>
+            <li>
+              <a href="news2.html">Зѳвѳлгѳѳ</a>
+            </li>
+            <li>
+              <a href="news3.html">Хэвлэл мэдээлэл</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="service.html">Үйлчилгээ<span></span> <i></i></a>
+          <div class="bg"></div>
+          <ul>
+            <li>
+              <a href="service1.html">Арчилгаа</a>
+            </li>
+            <li>
+              <a href="service2.html">Ноолуур угаах</a>
+            </li>
+            <li>
+              <a href="service3.html">Захиалах</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="help.html">Туслах цэс<span></span> <i></i></a>
+          <div class="bg"></div>
+          <ul>
+            <li>
+              <a href="help1.html">Хүний нѳѳц</a>
+            </li>
+            <li>
+              <a href="help2.html">Ажилын байр</a>
+            </li>
+            <li>
+              <a href="contact.html">холбоо барих</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="mobile-nav">
+      <div class="simple-input">
+        <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+        <input class="form-control" placeholder="Хайх" type="text">
+      </div>
+      <ul>
+        <li><a href="about.html">Бидний тухай <span></span> <i class="fa fa-angle-down pull-right"></i></a>
+          <ul>
+            <li>
+              <a href="about1.html">Эрхэм зорилгo</a>
+            </li>
+            <li>
+              <a href="about2.html">Түүх</a>
+            </li>
+            <li>
+              <a href="about3.html">Хамт олон</a>
+            </li>
+            <li>
+              <a href="about4.html">Үйлдвэрлэл</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="product.html">Бүтээгдэхүүн<span></span>  <i class="fa fa-angle-down pull-right"></i></a>
+          <ul>
+            <li>
+              <a href="product1.html">Эрэгтэй</a>
+            </li>
+            <li>
+              <a href="product1.html">Эмэгтэй</a>
+            </li>
+            <li>
+              <a href="product1.html">Хүүхэд</a>
+            </li>
+            <li>
+              <a href="product1.html">Гэр Ахуй</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="news.html">Мэдээ<span></span>  <i class="fa fa-angle-down pull-right"></i></a>
+          <ul>
+            <li>
+              <a href="news1.html">Нийгмийн хариуцлагa</a>
+            </li>
+            <li>
+              <a href="news2.html">Зѳвѳлгѳѳ</a>
+            </li>
+            <li>
+              <a href="news3.html">Хэвлэл мэдээлэл</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="service.html">Үйлчилгээ<span></span>  <i class="fa fa-angle-down pull-right"></i></a>
+          <ul>
+            <li>
+              <a href="service1.html">Арчилгаа</a>
+            </li>
+            <li>
+              <a href="service2.html">Ноолуур угаах</a>
+            </li>
+            <li>
+              <a href="service3.html">Захиалах</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="help.html">Туслах цэс<span></span>  <i class="fa fa-angle-down pull-right"></i></a>
+          <ul>
+            <li>
+              <a href="help1.html">Хүний нѳѳц</a>
+            </li>
+            <li>
+              <a href="help2.html">Ажилын байр</a>
+            </li>
+            <li>
+              <a href="contact.html">холбоо барих</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="page-header" style="background-image:url(img/page-header5.jpg)">
+      <div class="page-sub-title">
+        <div class="bg col-sm-6 col-xs-11"></div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6 col-xs-11">
+              <h5>Бидний тухай</h5>
+              <h2>Хамт олон</h2>
+              <p>
+                Cupiditate ullam error eius accusamus cumque. Quidem enim labore quia ut, aliquid temporibus id iure dolores ullam!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main">
+      <div class="container-fluid">
+        <ul class="sub-menu hidden-xs">
+          <li>
+            <a href="about1.html">
+              Эрхэм зорилго
+              <span></span>
+            </a>
+          </li>
+          <li>
+            <a href="about2.html">
+              түүх
+              <span></span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="about3.html">
+              Хамт олон
+              <span></span>
+            </a>
+          </li>
+          <li>
+            <a href="about4.html">
+              Үйлдвэрлэл
+              <span></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="fet-text">
+        <div class="container-fluid">
+          <div class="text">
+            <i class="fa fa-quote-left"></i>
+            Хэрэглэгч бүхнээ дээдлэн хүндэтгэж, салбартаа ямагт манлайлан, чанартай бараа, шилдэг техник технологийг эрхэмлэн, эх орныхоо хөгжилд бодитой хувь нэмэр оруулна
+          </div>
+        </div>
+      </div>
+      <div class="text-content">
+        <img src="img/page-header7.jpg"  class="thumb" alt="">
+        <div class="text-content-bg col-sm-7">
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6 text">
+              <h3>Маркетингийн алба</h3>
+              <p>
+                Non veritatis labore fuga sunt ipsa, ab dolores corporis quia, earum et esse aspernatur animi omnis officiis assumenda. Illum, provident, facilis. Rem!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non veritatis labore fuga sunt ipsa, ab dolores corporis quia, earum et esse aspernatur animi omnis officiis assumenda. Illum, provident, facilis. Rem!
+              </p>
+              <p>
+                “Алтай Кашмир” ХХК нь 1993 онд үүсгэн байгуулагдсан цагаасаа хойш ноолууран бүтээгдэхүүн үйлдвэрлэлээрээ Монголдоо тэргүүлэх үйлдвэрлэгч, экспортлогч компаниудын нэг болон үйл ажиллагаагаа үргэлжлүүлсээр ирсэн. Сүүлийн жилүүдэд “Алтай Кашмир” ХХК нь хэрэглэгчийн хэрэгцээ, чанарын шаардлага хангасан хамгийн шилдэг брэнд бүтээгдэхүүн үйлдвэрлэх хүчин чадалтай орчин үеийн дэвшилтэт технологи бүхий тоног төхөөрөмж суурилуулан хөрөнгө оруулалтыг жилээс жилд нэмэгдүүлэн үйл ажиллагаагаа амжилттай явуулсаар байна.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3 class="text-center main-sub-title">
+        Тѳлѳѳлѳн удирдах зѳвлѳл
+        <br>
+        <span></span>
+      </h3>
+      <div class="photo-list">
+        <div class="container-fluid">
+          <div class="flex-content-list">
+            <div class="flex-content col-sm-4 col-md-3 col-xs-6">
+              <div class="photo">
+                <div class="thumb" style="background-image:url(img/member8.jpg)">
+                  <img src="img/size1.png" alt="">
+                </div>
+                <div class="desc">
+                  <div class="name">Гантѳгс Ханддорж</div>
+                  <div class="order">web designer</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-content col-sm-4 col-md-3 col-xs-6">
+              <div class="photo">
+                <div class="thumb" style="background-image:url(img/member7.jpg)">
+                  <img src="img/size1.png" alt="">
+                </div>
+                <div class="desc">
+                  <div class="name">Гантѳгс Ханддорж</div>
+                  <div class="order">web designer</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-content col-sm-4 col-md-3 col-xs-6">
+              <div class="photo">
+                <div class="thumb" style="background-image:url(img/member6.jpg)">
+                  <img src="img/size1.png" alt="">
+                </div>
+                <div class="desc">
+                  <div class="name">Гантѳгс Ханддорж</div>
+                  <div class="order">web designer</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-content col-sm-4 col-md-3 col-xs-6">
+              <div class="photo">
+                <div class="thumb" style="background-image:url(img/member5.jpg)">
+                  <img src="img/size1.png" alt="">
+                </div>
+                <div class="desc">
+                  <div class="name">Гантѳгс Ханддорж</div>
+                  <div class="order">web designer</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-content col-sm-4 col-md-3 col-xs-6">
+              <div class="photo">
+                <div class="thumb" style="background-image:url(img/member1.jpg)">
+                  <img src="img/size1.png" alt="">
+                </div>
+                <div class="desc">
+                  <div class="name">Гантѳгс Ханддорж</div>
+                  <div class="order">web designer</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-content col-sm-4 col-md-3 col-xs-6">
+              <div class="photo">
+                <div class="thumb" style="background-image:url(img/member2.jpg)">
+                  <img src="img/size1.png" alt="">
+                </div>
+                <div class="desc">
+                  <div class="name">Гантѳгс Ханддорж</div>
+                  <div class="order">web designer</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-content col-sm-4 col-md-3 col-xs-6">
+              <div class="photo">
+                <div class="thumb" style="background-image:url(img/member3.jpg)">
+                  <img src="img/size1.png" alt="">
+                </div>
+                <div class="desc">
+                  <div class="name">Гантѳгс Ханддорж</div>
+                  <div class="order">web designer</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-content col-sm-4 col-md-3 col-xs-6">
+              <div class="photo">
+                <div class="thumb" style="background-image:url(img/member4.jpg)">
+                  <img src="img/size1.png" alt="">
+                </div>
+                <div class="desc">
+                  <div class="name">Гантѳгс Ханддорж</div>
+                  <div class="order">web designer</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-content right">
+        <img src="img/page-header6.jpg"  class="thumb" alt="">
+        <div class="text-content-bg col-sm-7">
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6 text">
+              <h3>Борлуулалтын алба</h3>
+              <p>
+                Non veritatis labore fuga sunt ipsa, ab dolores corporis quia, earum et esse aspernatur animi omnis officiis assumenda. Illum, provident, facilis. Rem!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non veritatis labore fuga sunt ipsa, ab dolores corporis quia, earum et esse aspernatur animi omnis officiis assumenda. Illum, provident, facilis. Rem!
+              </p>
+              <p>
+                “Алтай Кашмир” ХХК нь 1993 онд үүсгэн байгуулагдсан цагаасаа хойш ноолууран бүтээгдэхүүн үйлдвэрлэлээрээ Монголдоо тэргүүлэх үйлдвэрлэгч, экспортлогч компаниудын нэг болон үйл ажиллагаагаа үргэлжлүүлсээр ирсэн. Сүүлийн жилүүдэд “Алтай Кашмир” ХХК нь хэрэглэгчийн хэрэгцээ, чанарын шаардлага хангасан хамгийн шилдэг брэнд бүтээгдэхүүн үйлдвэрлэх хүчин чадалтай орчин үеийн дэвшилтэт технологи бүхий тоног төхөөрөмж суурилуулан хөрөнгө оруулалтыг жилээс жилд нэмэгдүүлэн үйл ажиллагаагаа амжилттай явуулсаар байна.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="fet-content">
+      <div class="col-sm-4 content">
+        <div class="thumb" style="background-image:url(img/fet-slide1.jpg)">
+          <a href="#" class="more-link"></a>
+          <div class="vertical-center">
+            <div class="title">
+              Altai Cashmare for Mans<br>
+              <span>Үзэх</span>
+            </div>
+          </div>
+          <img src="img/16-9.png" alt="">
+        </div>
+      </div>
+      <div class="col-sm-4 content">
+        <div class="thumb" style="background-image:url(img/fet-slide2.jpg)">
+          <a href="#" class="more-link"></a>
+          <div class="vertical-center">
+            <div class="title">
+              Altai Cashmare for Womens<br>
+              <span>Үзэх</span>
+            </div>
+          </div>
+          <img src="img/16-9.png" alt="">
+        </div>
+      </div>
+      <div class="col-sm-4 content">
+        <div class="thumb" style="background-image:url(img/fet-slide3.jpg)">
+          <a href="#" class="more-link"></a>
+          <div class="vertical-center">
+            <div class="title">
+              Altai Cashmare for Childrens<br>
+              <span>Үзэх</span>
+            </div>
+          </div>
+          <img src="img/16-9.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="subscribe">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-5">
+            <h6 class="text-right">
+              Шинээр бүтээгдэхүүний мэдээлэл болон<br> хямдралынмэдээлэл майлээр хүлээн авах
+            </h6>
+          </div>
+          <div class="col-sm-7">
+            <div class="simple-input mail-subscribe">
+              <i class="fa fa-envelope-o left-icon"></i>
+              <button type="submit" class="btn btn-default"><i class="fa fa-angle-right"></i></button>
+              <input class="form-control" placeholder="example@gmail.com" type="text">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="container-fluid">
+        <div class="col-md-5">
+          <div class="social">
+            <a href="#">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-youtube"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-google-plus"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="flex-content-list">
+            <div class="flex-content">
+              <ul>
+                <li>
+                  <a href="#">Бидний тухай <span></span></a>
+                </li>
+                <li>
+                  <a href="#">Эрхэм зорилга</a>
+                </li>
+                <li>
+                  <a href="#">Түүх</a>
+                </li>
+                <li>
+                  <a href="#">Хамт олон</a>
+                </li>
+                <li>
+                  <a href="#">Үйлдвэрлэл</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex-content">
+              <ul>
+                <li>
+                  <a href="#">Мэдээ<span></span></a>
+                </li>
+                <li>
+                  <a href="#">Нийгмийн хариуцлаг</a>
+                </li>
+                <li>
+                  <a href="#">Зѳвѳлгѳѳ</a>
+                </li>
+                <li>
+                  <a href="#">Хэвлэл мэдээлэл</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex-content">
+              <ul>
+                <li><a href="#">Үйлчилгээ<span></span></a></li>
+                <li>
+                  <a href="#">Арчилгаа</a>
+                </li>
+                <li>
+                  <a href="#">Ноолуур угаах</a>
+                </li>
+                <li>
+                  <a href="#">Захиалах</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex-content">
+              <ul>
+                <li><a href="#">Бүтээгдэхүүн<span></span></a></li>
+                <li>
+                  <a href="#">Эрэгтэй</a>
+                </li>
+                <li>
+                  <a href="#">Эмэгтэй</a>
+                </li>
+                <li>
+                  <a href="#">Хүүхэд</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex-content">
+              <ul>
+                <li><a href="#">Туслах цэс<span></span></a></li>
+                <li>
+                  <a href="#">Хүний нѳѳц</a>
+                </li>
+                <li>
+                  <a href="#">Ажилын байр</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright text-center">
+      <div class="container-fluid">
+          © 2016 Altai Cashmare. Бүх эрх хуулиар хамгаалагдсан.
+      </div>
+    </div>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/controller.js"></script>
+  </body>
+</html>

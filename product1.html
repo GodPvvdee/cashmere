@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Altai Cashmare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <!-- Bootstrap -->
+    <link rel="icon" type="img/png" href="images/fav-icon.png" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <style>
+      #bywild{
+        position: fixed;
+        bottom: 0;
+        right: 0; z-index: 999;
+        color: white;
+        background-color: rgba(0,0,0,0.5);
+        padding: 4px; padding-left: 10px;
+        border-top-left-radius: 15px;
+        cursor: pointer;
+      }
+      #bywild .bywildby{}
+      #bywild .bywildwild{
+        display: inline-block;
+        width: 0; overflow:
+        hidden; vertical-align: middle;
+        transition: width 0.5s;
+      }
+      #bywild .bywildwild img{
+        width: 50px;
+      }
+      #bywild:hover .bywildwild{
+        width: 50px;
+      }
+      @media (max-width: 992px)  {
+        #bywild .bywildwild {
+          width: 50px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bywild" class="">
+      <div class="bywildby"> by
+        <div class="bywildwild">
+          <a href="http://wild.agency" target="_blank"> <img src="http://ardholdings.com/wp-content/themes/ARD/images/wild_white.svg"> </a>
+        </div>
+      </div>
+    </div>
+    <div id="header">
+      <div class="header-top">
+        <div class="narrow hidden-xs">
+          <span>
+            <img src="img/narrow.jpg" alt="">
+          </span>
+        </div>
+        <div class="container-fluid">
+          <div class="logo">
+            <a href="index.html">
+              <img src="img/logo.jpg" alt="">
+            </a>
+          </div>
+          <div class="pull-left">
+            <div class="lang">
+              <a href="#" class="active">MН</a>
+              <a href="#">En</a>
+            </div>
+          </div>
+          <div class="pull-right hidden-xs">
+            <div class="search">
+              <i class="fa fa-search left-icon"></i>
+              <button type="submit" class="btn btn-default"><i class="fa fa-angle-right"></i></button>
+              <input type="text" class="form-control" placeholder="хайх">
+            </div>
+          </div>
+          <div class="pull-right bars">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <ul class="nav-menu hidden-xs">
+        <li><a href="about.html">Бидний тухай <span></span> <i></i></a>
+          <div class="bg"></div>
+          <ul>
+            <li>
+              <a href="about1.html">Эрхэм зорилгo</a>
+            </li>
+            <li>
+              <a href="about2.html">Түүх</a>
+            </li>
+            <li>
+              <a href="about3.html">Хамт олон</a>
+            </li>
+            <li>
+              <a href="about4.html">Үйлдвэрлэл</a>
+            </li>
+          </ul>
+        </li>
+        <li class="active"><a href="product.html">Бүтээгдэхүүн<span></span> <i></i></a>
+          <div class="bg"></div>
+          <ul>
+            <li>
+              <a href="product1.html">Эрэгтэй</a>
+            </li>
+            <li>
+              <a href="product1.html">Эмэгтэй</a>
+            </li>
+            <li>
+              <a href="product1.html">Хүүхэд</a>
+            </li>
+            <li>
+              <a href="product1.html">Гэр Ахуй</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="news.html">Мэдээ<span></span> <i></i></a>
+          <div class="bg"></div>
+          <ul>
+            <li>
+              <a href="news1.html">Нийгмийн хариуцлагa</a>
+            </li>
+            <li>
+              <a href="news2.html">Зѳвѳлгѳѳ</a>
+            </li>
+            <li>
+              <a href="news3.html">Хэвлэл мэдээлэл</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="service.html">Үйлчилгээ<span></span> <i></i></a>
+          <div class="bg"></div>
+          <ul>
+            <li>
+              <a href="service1.html">Арчилгаа</a>
+            </li>
+            <li>
+              <a href="service2.html">Ноолуур угаах</a>
+            </li>
+            <li>
+              <a href="service3.html">Захиалах</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="help.html">Туслах цэс<span></span> <i></i></a>
+          <div class="bg"></div>
+          <ul>
+            <li>
+              <a href="help1.html">Хүний нѳѳц</a>
+            </li>
+            <li>
+              <a href="help2.html">Ажилын байр</a>
+            </li>
+            <li>
+              <a href="contact.html">холбоо барих</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="mobile-nav">
+      <div class="simple-input">
+        <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+        <input class="form-control" placeholder="Хайх" type="text">
+      </div>
+      <ul>
+        <li><a href="about.html">Бидний тухай <span></span> <i class="fa fa-angle-down pull-right"></i></a>
+          <ul>
+            <li>
+              <a href="about1.html">Эрхэм зорилгo</a>
+            </li>
+            <li>
+              <a href="about2.html">Түүх</a>
+            </li>
+            <li>
+              <a href="about3.html">Хамт олон</a>
+            </li>
+            <li>
+              <a href="about4.html">Үйлдвэрлэл</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="product.html">Бүтээгдэхүүн<span></span>  <i class="fa fa-angle-down pull-right"></i></a>
+          <ul>
+            <li>
+              <a href="product1.html">Эрэгтэй</a>
+            </li>
+            <li>
+              <a href="product1.html">Эмэгтэй</a>
+            </li>
+            <li>
+              <a href="product1.html">Хүүхэд</a>
+            </li>
+            <li>
+              <a href="product1.html">Гэр Ахуй</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="news.html">Мэдээ<span></span>  <i class="fa fa-angle-down pull-right"></i></a>
+          <ul>
+            <li>
+              <a href="news1.html">Нийгмийн хариуцлагa</a>
+            </li>
+            <li>
+              <a href="news2.html">Зѳвѳлгѳѳ</a>
+            </li>
+            <li>
+              <a href="news3.html">Хэвлэл мэдээлэл</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="service.html">Үйлчилгээ<span></span>  <i class="fa fa-angle-down pull-right"></i></a>
+          <ul>
+            <li>
+              <a href="service1.html">Арчилгаа</a>
+            </li>
+            <li>
+              <a href="service2.html">Ноолуур угаах</a>
+            </li>
+            <li>
+              <a href="service3.html">Захиалах</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="help.html">Туслах цэс<span></span>  <i class="fa fa-angle-down pull-right"></i></a>
+          <ul>
+            <li>
+              <a href="help1.html">Хүний нѳѳц</a>
+            </li>
+            <li>
+              <a href="help2.html">Ажилын байр</a>
+            </li>
+            <li>
+              <a href="contact.html">холбоо барих</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div id="main" class="padding-top-none">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="visible-xs mobile-product-menu">
+              Бүтээгдэхүүний тѳрѳл
+              <i class="fa fa-angle-down pull-right"></i>
+            </div>
+            <ul class="product-menu-list">
+              <li><a href="#">Эрэгтэй</a>
+                <ul>
+                  <li><a href="#">Сорочка</a></li>
+                  <li><a href="#">Кардиган</a></li>
+                  <li><a href="#">Джампер</a></li>
+                  <li><a href="#">Пулловер</a></li>
+                  <li><a href="#">Светр</a></li>
+                  <li><a href="#">Майк</a></li>
+                  <li class="active"><a href="#">Жилетка</a></li>
+                  <li><a href="#">Ѳмд</a></li>
+                  <li><a href="#">Малгай</a></li>
+                  <li><a href="#">Юубка</a></li>
+                  <li><a href="#">Ороолт</a></li>
+                  <li><a href="#">Бээлий</a></li>
+                  <li><a href="#">Оймс</a></li>
+                  <li><a href="#">Польто</a></li>
+                  <li><a href="#">Даашинз</a></li>
+                  <li><a href="#">Шааль</a></li>
+                  <li><a href="#">Нѳмрѳг</a></li>
+                  <li><a href="#">Дээл</a></li>
+                  <li><a href="#">Хүрэм</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Эмэгтэй</a></li>
+              <li><a href="#">Хүүхэд</a></li>
+              <li><a href="#">Гэр ахуй</a></li>
+              <li class="colection"><a href="#">New colection</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-10">
+            <div class="pl-head">
+              <div class="simple-input">
+                <i class="fa fa-search left-icon"></i>
+                <button type="submit" class="btn btn-default"><i class="fa fa-angle-right"></i></button>
+                <input class="form-control" placeholder="хайх" type="text">
+              </div>
+            </div>
+            <div class="material">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="checkbox checked">
+                    <label>
+                      <span class="check">
+                        <i class="fa fa-check"></i>
+                      </span> Ноолуур
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <span class="check">
+                        <i class="fa fa-check"></i>
+                      </span> Ноос
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <span class="check">
+                        <i class="fa fa-check"></i>
+                      </span> Сүлжмэл
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <span class="check">
+                        <i class="fa fa-check"></i>
+                      </span> Тэмээний ноос
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="price-filter">
+                    <div class="price">
+                      <label for="amount">Үнэ</label>
+                      <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                    </div>
+                    <div id="slider-range"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-content-list">
+              <div class="flex-content col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="product-content">
+                  <a href="product2.html"></a>
+                  <div class="thumb">
+                    <div class="image" style="background-image:url(img/col1.jpg)">
+                      <img src="img/size2.png" alt="">
+                    </div>
+                    <span class="more-icon">
+                      <i class="fa fa-angle-right"></i>
+                    </span>
+                  </div>
+                  <div class="desc">
+                    <h2>Эмэгтэй нѳмрѳг</h2>
+                    <div class="price">
+                      <span>13'000₮</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-content col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="product-content">
+                  <a href="product2.html"></a>
+                  <div class="thumb">
+                    <div class="image" style="background-image:url(img/col2.jpg)">
+                      <img src="img/size2.png" alt="">
+                    </div>
+                    <span class="more-icon">
+                      <i class="fa fa-angle-right"></i>
+                    </span>
+                  </div>
+                  <div class="desc">
+                    <h2>Эмэгтэй нѳмрѳг</h2>
+                    <div class="price">
+                      <span>13'000₮</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-content col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="product-content">
+                  <a href="product2.html"></a>
+                  <div class="thumb">
+                    <div class="image" style="background-image:url(img/col3.jpg)">
+                      <img src="img/size2.png" alt="">
+                    </div>
+                    <span class="more-icon">
+                      <i class="fa fa-angle-right"></i>
+                    </span>
+                  </div>
+                  <div class="desc">
+                    <h2>Эмэгтэй нѳмрѳг</h2>
+                    <div class="price">
+                      <span>13'000₮</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-content col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="product-content">
+                  <a href="product2.html"></a>
+                  <div class="thumb">
+                    <div class="image" style="background-image:url(img/col4.jpg)">
+                      <img src="img/size2.png" alt="">
+                    </div>
+                    <span class="more-icon">
+                      <i class="fa fa-angle-right"></i>
+                    </span>
+                  </div>
+                  <div class="desc">
+                    <h2>Эмэгтэй нѳмрѳг</h2>
+                    <div class="price">
+                      <span>13'000₮</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-content col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="product-content">
+                  <a href="product2.html"></a>
+                  <div class="thumb">
+                    <div class="image" style="background-image:url(img/col5.jpg)">
+                      <img src="img/size2.png" alt="">
+                    </div>
+                    <span class="more-icon">
+                      <i class="fa fa-angle-right"></i>
+                    </span>
+                  </div>
+                  <div class="desc">
+                    <h2>Эмэгтэй нѳмрѳг</h2>
+                    <div class="price">
+                      <span>13'000₮</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-content col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="product-content">
+                  <a href="product2.html"></a>
+                  <div class="thumb">
+                    <div class="image" style="background-image:url(img/col6.jpg)">
+                      <img src="img/size2.png" alt="">
+                    </div>
+                    <span class="more-icon">
+                      <i class="fa fa-angle-right"></i>
+                    </span>
+                  </div>
+                  <div class="desc">
+                    <h2>Эмэгтэй нѳмрѳг</h2>
+                    <div class="price">
+                      <span>13'000₮</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-content col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="product-content">
+                  <a href="product2.html"></a>
+                  <div class="thumb">
+                    <div class="image" style="background-image:url(img/col7.jpg)">
+                      <img src="img/size2.png" alt="">
+                    </div>
+                    <span class="more-icon">
+                      <i class="fa fa-angle-right"></i>
+                    </span>
+                  </div>
+                  <div class="desc">
+                    <h2>Эмэгтэй нѳмрѳг</h2>
+                    <div class="price">
+                      <span>13'000₮</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-content col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="product-content">
+                  <a href="product2.html"></a>
+                  <div class="thumb">
+                    <div class="image" style="background-image:url(img/col8.jpg)">
+                      <img src="img/size2.png" alt="">
+                    </div>
+                    <span class="more-icon">
+                      <i class="fa fa-angle-right"></i>
+                    </span>
+                  </div>
+                  <div class="desc">
+                    <h2>Эмэгтэй нѳмрѳг</h2>
+                    <div class="price">
+                      <span>13'000₮</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-content col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="product-content">
+                  <a href="product2.html"></a>
+                  <div class="thumb">
+                    <div class="image" style="background-image:url(img/col9.jpg)">
+                      <img src="img/size2.png" alt="">
+                    </div>
+                    <span class="more-icon">
+                      <i class="fa fa-angle-right"></i>
+                    </span>
+                  </div>
+                  <div class="desc">
+                    <h2>Эмэгтэй нѳмрѳг</h2>
+                    <div class="price">
+                      <span>13'000₮</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-content col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="product-content">
+                  <a href="product2.html"></a>
+                  <div class="thumb">
+                    <div class="image" style="background-image:url(img/col10.jpg)">
+                      <img src="img/size2.png" alt="">
+                    </div>
+                    <span class="more-icon">
+                      <i class="fa fa-angle-right"></i>
+                    </span>
+                  </div>
+                  <div class="desc">
+                    <h2>Эмэгтэй нѳмрѳг</h2>
+                    <div class="price">
+                      <span>13'000₮</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-content col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="product-content">
+                  <a href="product2.html"></a>
+                  <div class="thumb">
+                    <div class="image" style="background-image:url(img/col11.jpg)">
+                      <img src="img/size2.png" alt="">
+                    </div>
+                    <span class="more-icon">
+                      <i class="fa fa-angle-right"></i>
+                    </span>
+                  </div>
+                  <div class="desc">
+                    <h2>Эмэгтэй нѳмрѳг</h2>
+                    <div class="price">
+                      <span>13'000₮</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-content col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                <div class="product-content">
+                  <a href="product2.html"></a>
+                  <div class="thumb">
+                    <div class="image" style="background-image:url(img/col12.jpg)">
+                      <img src="img/size2.png" alt="">
+                    </div>
+                    <span class="more-icon">
+                      <i class="fa fa-angle-right"></i>
+                    </span>
+                  </div>
+                  <div class="desc">
+                    <h2>Эмэгтэй нѳмрѳг</h2>
+                    <div class="price">
+                      <span>13'000₮</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="page-number">
+              <li class="active">
+                <a href="#">1</a>
+              </li>
+              <li>
+                <a href="#">2</a>
+              </li>
+              <li>
+                <a href="#">3</a>
+              </li>
+              <li>
+                <a href="#">4</a>
+              </li>
+              <li>
+                <a href="#">5</a>
+              </li>
+              <li>
+                <a href="#">6</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="colection-banner">
+          <a href="#"></a>
+          <img src="img/colection.jpg" alt="">
+          <div class="desc">
+            <div class="narrow">
+              <img src="img/right.svg" alt="">
+            </div>
+            <div class="desc-main">
+              <h2>new colection</h2>
+              <span>2014-2015</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="fet-content">
+      <div class="col-sm-4 content">
+        <div class="thumb" style="background-image:url(img/fet-slide1.jpg)">
+          <a href="#"></a>
+          <div class="vertical-center">
+            <div class="title">
+              Altai Cashmare for Mans<br>
+              <span>Үзэх</span>
+            </div>
+          </div>
+          <img src="img/16-9.png" alt="">
+        </div>
+      </div>
+      <div class="col-sm-4 content">
+        <div class="thumb" style="background-image:url(img/fet-slide2.jpg)">
+          <a href="#"></a>
+          <div class="vertical-center">
+            <div class="title">
+              Altai Cashmare for Womens<br>
+              <span>Үзэх</span>
+            </div>
+          </div>
+          <img src="img/16-9.png" alt="">
+        </div>
+      </div>
+      <div class="col-sm-4 content">
+        <div class="thumb" style="background-image:url(img/fet-slide3.jpg)">
+          <a href="#"></a>
+          <div class="vertical-center">
+            <div class="title">
+              Altai Cashmare for Childrens<br>
+              <span>Үзэх</span>
+            </div>
+          </div>
+          <img src="img/16-9.png" alt="">
+        </div>
+      </div>
+    </div> -->
+    <div class="subscribe">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-5">
+            <h6 class="text-right">
+              Шинээ бүтээгдэхүүний мэдээлэл болон<br> хямдралынмэдээлэл майлээр хүлээн авах
+            </h6>
+          </div>
+          <div class="col-sm-7">
+            <div class="simple-input mail-subscribe">
+              <i class="fa fa-envelope-o left-icon"></i>
+              <button type="submit" class="btn btn-default"><i class="fa fa-angle-right"></i></button>
+              <input class="form-control" placeholder="example@gmail.com" type="text">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="container-fluid">
+        <div class="col-md-5">
+          <div class="social">
+            <a href="#">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-youtube"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-google-plus"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="flex-content-list">
+            <div class="flex-content">
+              <ul>
+                <li>
+                  <a href="#">Бидний тухай <span></span></a>
+                </li>
+                <li>
+                  <a href="#">Эрхэм зорилга</a>
+                </li>
+                <li>
+                  <a href="#">Түүх</a>
+                </li>
+                <li>
+                  <a href="#">Хамт олон</a>
+                </li>
+                <li>
+                  <a href="#">Үйлдвэрлэл</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex-content">
+              <ul>
+                <li>
+                  <a href="#">Мэдээ<span></span></a>
+                </li>
+                <li>
+                  <a href="#">Нийгмийн хариуцлаг</a>
+                </li>
+                <li>
+                  <a href="#">Зѳвѳлгѳѳ</a>
+                </li>
+                <li>
+                  <a href="#">Хэвлэл мэдээлэл</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex-content">
+              <ul>
+                <li><a href="#">Үйлчилгээ<span></span></a></li>
+                <li>
+                  <a href="#">Арчилгаа</a>
+                </li>
+                <li>
+                  <a href="#">Ноолуур угаах</a>
+                </li>
+                <li>
+                  <a href="#">Захиалах</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex-content">
+              <ul>
+                <li><a href="#">Бүтээгдэхүүн<span></span></a></li>
+                <li>
+                  <a href="#">Эрэгтэй</a>
+                </li>
+                <li>
+                  <a href="#">Эмэгтэй</a>
+                </li>
+                <li>
+                  <a href="#">Хүүхэд</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex-content">
+              <ul>
+                <li><a href="#">Туслах цэс<span></span></a></li>
+                <li>
+                  <a href="#">Хүний нѳѳц</a>
+                </li>
+                <li>
+                  <a href="#">Ажилын байр</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright text-center">
+      <div class="container-fluid">
+          © 2016 Altai Cashmare. Бүх эрх хуулиар хамгаалагдсан.
+      </div>
+    </div>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/controller.js"></script>
+    <script>
+    	$(function() {
+    		$( "#slider-range" ).slider({
+    			range: true,
+    			min: 45000,
+    			max: 300000,
+    			values: [ 100000, 200000 ],
+    			slide: function( event, ui ) {
+    				$( "#amount" ).val( "₮" + ui.values[ 0 ] + " - ₮" + ui.values[ 1 ] );
+    			}
+    		});
+    		$( "#amount" ).val( "₮" + $( "#slider-range" ).slider( "values", 0 ) +
+    			" - ₮" + $( "#slider-range" ).slider( "values", 1 ) );
+    	});
+  	</script>
+  </body>
+</html>
